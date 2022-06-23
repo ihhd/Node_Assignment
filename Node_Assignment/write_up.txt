@@ -1,0 +1,36 @@
+getting the JSON Object Array data on https://localhost:3000/getTimeStories 
+ 
+                 ---- before getting started ----
+------------------------------------------------------------------------------
+-->  the system must have node js installed into it
+------------------------------------------------------------------------------
+for checking wheather the node is installed correctly
+--> node -v
+--> npm -v
+-------------------------------------------------------------------------------
+install the required dependencies
+--> npm install express  --> adds the module to the dependencies list in the package. json file.
+--> npm install -g nodemon  --> whenver you write any code for existing code it will save the changes automatically.
+-------------------------------------------------------------------------------
+after that create one index.js file
+1. import the express dependencies.
+2. connect the local host to the default server.
+3. mention the default port number as 3000.
+4. connect it to the express application.
+5.check wheather the application is running or not by calling the app.get method(i.e by res.send('Hello World!!')).
+--------------------------------------------------------------------------------
+--> create one object named stories
+--> store all the provided JSON object data within that
+--> then to get all the JSON Object on the localhost call app.get method
+--> this time mention the url as the user want to see the JSOn data on the getTimeStories page
+--> so to navigate to that url you have to explicitly specify the url while connecting to the localhost server i.e
+
+app.get('/getTimeStories',(req,res) => {
+    res.send(stories)
+})
+
+ you can find even the screenshots attached for better understanding.
+
+
+ Thanks & Regards,
+ Ishwar Hiremath
